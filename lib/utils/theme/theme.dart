@@ -7,8 +7,8 @@ import 'package:e_commerce/utils/theme/custom_themes/text_field_theme.dart';
 import 'package:e_commerce/utils/theme/custom_themes/text_theme.dart';
 import 'package:flutter/material.dart';
 
-class AppTheme{
-  AppTheme._();
+class MyAppTheme{
+  MyAppTheme._();
 
   static ThemeData lightTheme = ThemeData(
     useMaterial3: true,
