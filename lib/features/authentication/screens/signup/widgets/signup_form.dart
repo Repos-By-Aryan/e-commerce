@@ -1,5 +1,7 @@
+import 'package:e_commerce/features/authentication/screens/signup/verify_email.dart';
 import 'package:e_commerce/features/authentication/screens/signup/widgets/terms_conditions_checkbox.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 import '../../../../../utils/constants/colors.dart';
@@ -12,7 +14,6 @@ class MySignupForm extends StatelessWidget {
     super.key,
   });
 
-
   @override
   Widget build(BuildContext context) {
     final dark = MyHelperFunctions.isDarkMode(context);
@@ -24,21 +25,21 @@ class MySignupForm extends StatelessWidget {
             children: [
               Expanded(
                   child: TextFormField(
-                    expands: false,
-                    decoration: const InputDecoration(
-                        labelText: MyTexts.firstName,
-                        prefixIcon: Icon(Iconsax.user)),
-                  )),
+                expands: false,
+                decoration: const InputDecoration(
+                    labelText: MyTexts.firstName,
+                    prefixIcon: Icon(Iconsax.user)),
+              )),
               const SizedBox(
                 width: MySizes.spaceBtwInputFields,
               ),
               Expanded(
                   child: TextFormField(
-                    expands: false,
-                    decoration: const InputDecoration(
-                        labelText: MyTexts.lastName,
-                        prefixIcon: Icon(Iconsax.user)),
-                  )),
+                expands: false,
+                decoration: const InputDecoration(
+                    labelText: MyTexts.lastName,
+                    prefixIcon: Icon(Iconsax.user)),
+              )),
             ],
           ),
           const SizedBox(
@@ -58,8 +59,7 @@ class MySignupForm extends StatelessWidget {
           ///Email
           TextFormField(
             decoration: const InputDecoration(
-                labelText: MyTexts.email,
-                prefixIcon: Icon(Iconsax.direct)),
+                labelText: MyTexts.email, prefixIcon: Icon(Iconsax.direct)),
           ),
           const SizedBox(
             height: MySizes.spaceBtwInputFields,
@@ -68,8 +68,7 @@ class MySignupForm extends StatelessWidget {
           ///Phone Number
           TextFormField(
             decoration: const InputDecoration(
-                labelText: MyTexts.phoneNo,
-                prefixIcon: Icon(Iconsax.call)),
+                labelText: MyTexts.phoneNo, prefixIcon: Icon(Iconsax.call)),
           ),
           const SizedBox(
             height: MySizes.spaceBtwInputFields,
@@ -89,14 +88,22 @@ class MySignupForm extends StatelessWidget {
 
           ///Terms&Conditions Checkbox
           const MyTermsAndConditionCheckBox(),
-          const SizedBox(height: MySizes.spaceBtwSections,),
-
+          const SizedBox(
+            height: MySizes.spaceBtwSections,
+          ),
 
           ///Signup Button
-          SizedBox(width: double.infinity,child: ElevatedButton(onPressed:(){},child: const Text(MyTexts.createAccount),),),
+          SizedBox(
+            width: double.infinity,
+            child: ElevatedButton(
+              onPressed: () {
+                Get.to(() => const VerifyEmailScreen());
+              },
+              child: const Text(MyTexts.createAccount),
+            ),
+          ),
         ],
       ),
     );
   }
 }
-
