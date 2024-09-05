@@ -13,6 +13,7 @@ class MyPrimaryHeaderContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return MyCurvedEdgeWidget(
       child: Container(
+        height: 400,/// Provided the height as the contents were not visible
         padding: const EdgeInsets.only(bottom: 0),
         color: MyAppColors.primary,
 

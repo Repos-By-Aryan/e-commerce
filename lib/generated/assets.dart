@@ -24,6 +24,7 @@ class Assets {
   static const String animationsSammyLineSuccess = 'assets/images/animations/sammy-line-success.png';
   static const String animationsSammyLineTravelBackpackWithPassportAndAirTicket = 'assets/images/animations/sammy-line-travel-backpack-with-passport-and-air-ticket.gif';
   static const String animationsSammyLineWorkout = 'assets/images/animations/sammy-line-workout.gif';
+  static const String appbarAppbar = 'lib/common/widgets/appbar/appbar.dart';
   static const String bannersBanner1 = 'assets/images/banners/banner_1.jpg';
   static const String bannersBanner2 = 'assets/images/banners/banner_2.jpg';
   static const String bannersBanner3 = 'assets/images/banners/banner_3.jpg';
@@ -42,6 +43,7 @@ class Assets {
   static const String brandsNike = 'assets/icons/brands/nike.png';
   static const String brandsPumaLogo = 'assets/icons/brands/puma-logo.png';
   static const String brandsZaraLogo = 'assets/icons/brands/zara-logo.png';
+  static const String cartCartMenuIcon = 'lib/common/widgets/products/cart/cart_menu_icon.dart';
   static const String categoriesIcons8Bowling64 = 'assets/icons/categories/icons8-bowling-64.png';
   static const String categoriesIcons8Cosmetics64 = 'assets/icons/categories/icons8-cosmetics-64.png';
   static const String categoriesIcons8DiningChair64 = 'assets/icons/categories/icons8-dining-chair-64.png';
@@ -157,7 +159,7 @@ class Assets {
   static const String productsIphone8MobileDualSide = 'assets/images/products/iphone8_mobile_dual_side.png';
   static const String productsIphone8MobileFront = 'assets/images/products/iphone8_mobile_front.png';
   static const String productsKitchenCounter = 'assets/images/products/kitchen_counter.png';
-  static const String productsKitchenDiningtable = 'assets/images/products/kitchen_dining table.png';
+  static const String productsKitchenDining table = 'assets/images/products/kitchen_dining table.png';
   static const String productsKitchenRefrigerator = 'assets/images/products/kitchen_refrigerator.png';
   static const String productsLeatherJacket1 = 'assets/images/products/leather_jacket_1.png';
   static const String productsLeatherJacket2 = 'assets/images/products/leather_jacket_2.png';
@@ -217,6 +219,7 @@ class Assets {
   static const String successScreenSuccessScreen = 'lib/common/widgets/success_screen/success_screen.dart';
   static const String themeTheme = 'lib/utils/theme/theme.dart';
   static const String validatorsValidation = 'lib/utils/validators/validation.dart';
+  static const String widgetsHomeAppbar = 'lib/features/shop/screens/widgets/home_appbar.dart';
   static const String widgetsLoginForm = 'lib/features/authentication/screens/login/widgets/login_form.dart';
   static const String widgetsLoginHeader = 'lib/features/authentication/screens/login/widgets/login_header.dart';
   static const String widgetsOnboardingDotNavigation = 'lib/features/authentication/screens/onboarding/widgets/onboarding_dot_navigation.dart';

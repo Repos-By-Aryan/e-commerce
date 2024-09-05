@@ -2,6 +2,13 @@
 class MyTexts {
 
 // -- GLOBAL Texts
+  static const String continueText = "Continue";
+  static const String submit = "Submit";
+  static const String done = "Done";
+  static const String skip = "Skip";
+  static const String and = "and";
+  static const String appName = "My-Store";
+
 
 // -- OnBoarding Texts
   static const String onBoardingTitle1 = "Choose your product";
@@ -31,15 +38,12 @@ class MyTexts {
   static const String orSignInWith = "or sign in with";
   static const String orSignUpWith = "or sign up with";
   static const String iAgreeTo = "I agree to";
-  static const String and = "and";
   static const String privacyPolicy = "Privacy Policy";
   static const String terms0fUse = "Terms of use";
   static const String verificationCode = "verificationCode";
   static const String resendEmail = "Resend Email";
   static const String resendEmailIn = "Resend email in";
-  static const String continueText = "Continue";
-  static const String submit = "Submit";
-  static const String done = "Done";
+
 
   // -- Authentication Headings Text
   static const String loginTitle = "Welcome back,";

@@ -1,12 +1,13 @@
-import 'package:e_commerce/app.dart';
-import 'package:e_commerce/common/widgets/custom_shapes/curved_edges/curved_edges.dart';
+import 'package:e_commerce/common/widgets/appbar/appbar.dart';
+import 'package:e_commerce/features/shop/screens/widgets/home_appbar.dart';
+import 'package:e_commerce/utils/constants/colors.dart';
+import 'package:e_commerce/utils/constants/texts.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:iconsax/iconsax.dart';
 
-import '../../../common/widgets/custom_shapes/containers/circlular_container.dart';
 import '../../../common/widgets/custom_shapes/containers/primary_header_container.dart';
-import '../../../common/widgets/custom_shapes/curved_edges/curved_edges_widget.dart';
-import '../../../utils/constants/colors.dart';
+import '../../../common/widgets/products/cart/cart_menu_icon.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -18,8 +19,13 @@ class HomeScreen extends StatelessWidget {
           child: Column(
         children: [
           MyPrimaryHeaderContainer(
-            child:Container(),
+            child: Column(
+              children: [
+                /// Custom App Bar
+                MyHomeAppBar(),
+              ],
             ),
+          ),
         ],
       )),
     );

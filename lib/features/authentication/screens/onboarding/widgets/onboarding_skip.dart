@@ -2,6 +2,7 @@ import 'package:e_commerce/features/authentication/controllers/onboarding/onboar
 import 'package:flutter/material.dart';
 
 import '../../../../../utils/constants/sizes.dart';
+import '../../../../../utils/constants/texts.dart';
 import '../../../../../utils/device/device_utility.dart';
 
 class OnBoardingSkip extends StatelessWidget {
@@ -14,7 +15,7 @@ class OnBoardingSkip extends StatelessWidget {
     return Positioned(
       top: MyDeviceUtils.getAppBarHeight(),
       right: MySizes.defaultSpace,
-      child: TextButton(onPressed: () => OnboardingController.instance.skipPage(), child: const Text('Skip')),
+      child: TextButton(onPressed: () => OnboardingController.instance.skipPage(), child: const Text(MyTexts.skip)),
     );
   }
 }
