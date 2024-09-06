@@ -62,6 +62,7 @@ class Assets {
   static const String constantsTexts = 'lib/utils/constants/texts.dart';
   static const String containersCirclularContainer = 'lib/common/widgets/custom_shapes/containers/circlular_container.dart';
   static const String containersPrimaryHeaderContainer = 'lib/common/widgets/custom_shapes/containers/primary_header_container.dart';
+  static const String containersSearchContainer = 'lib/common/widgets/custom_shapes/containers/search_container.dart';
   static const String contentUser = 'assets/images/content/user.png';
   static const String curvedEdgesCurvedEdges = 'lib/common/widgets/custom_shapes/curved_edges/curved_edges.dart';
   static const String curvedEdgesCurvedEdgesWidget = 'lib/common/widgets/custom_shapes/curved_edges/curved_edges_widget.dart';
@@ -217,6 +218,7 @@ class Assets {
   static const String signupVerifyEmail = 'lib/features/authentication/screens/signup/verify_email.dart';
   static const String stylesSpacingStyles = 'lib/common/styles/spacing_styles.dart';
   static const String successScreenSuccessScreen = 'lib/common/widgets/success_screen/success_screen.dart';
+  static const String textsSectionHeading = 'lib/common/widgets/texts/section_heading.dart';
   static const String themeTheme = 'lib/utils/theme/theme.dart';
   static const String validatorsValidation = 'lib/utils/validators/validation.dart';
   static const String widgetsHomeAppbar = 'lib/features/shop/screens/widgets/home_appbar.dart';
