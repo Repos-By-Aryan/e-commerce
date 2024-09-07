@@ -1,22 +1,13 @@
-import 'dart:developer';
 
-import 'package:e_commerce/common/widgets/appbar/appbar.dart';
 import 'package:e_commerce/features/shop/screens/widgets/home_appbar.dart';
-import 'package:e_commerce/features/shop/screens/widgets/home_catgories.dart';
+import 'package:e_commerce/features/shop/screens/widgets/home_categories.dart';
+import 'package:e_commerce/features/shop/screens/widgets/promo_slider.dart';
 import 'package:e_commerce/utils/constants/colors.dart';
 import 'package:e_commerce/utils/constants/image_strings.dart';
-import 'package:e_commerce/utils/constants/texts.dart';
-import 'package:e_commerce/utils/device/device_utility.dart';
-import 'package:e_commerce/utils/helpers/helper_functions.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-import 'package:iconsax/iconsax.dart';
 
 import '../../../common/widgets/custom_shapes/containers/primary_header_container.dart';
 import '../../../common/widgets/custom_shapes/containers/search_container.dart';
-import '../../../common/widgets/image_text_widgets/vertical_image_text.dart';
-import '../../../common/widgets/products/cart/cart_menu_icon.dart';
 import '../../../common/widgets/texts/section_heading.dart';
 import '../../../utils/constants/sizes.dart';
 
@@ -68,6 +59,14 @@ class HomeScreen extends StatelessWidget {
                 ),
               ],
             ),
+          ),
+
+          /// Carousel Slider
+          Padding(
+            padding: EdgeInsets.all(MySizes.md),
+            child: MyPromoSlider(banners: [MyImages.promoBanner1,MyImages.promoBanner2,MyImages.promoBanner3,MyImages.promoBanner4,MyImages.promoBanner5,MyImages.promoBanner6,MyImages.promoBanner7,MyImages.promoBanner8],),
+
+
           ),
         ],
       )),
