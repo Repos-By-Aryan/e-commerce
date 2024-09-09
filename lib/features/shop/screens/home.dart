@@ -1,4 +1,4 @@
-
+import 'package:e_commerce/common/widgets/products/product_cards/product_card_vertical.dart';
 import 'package:e_commerce/features/shop/screens/widgets/home_appbar.dart';
 import 'package:e_commerce/features/shop/screens/widgets/home_categories.dart';
 import 'package:e_commerce/features/shop/screens/widgets/promo_slider.dart';
@@ -64,13 +64,32 @@ class HomeScreen extends StatelessWidget {
           /// Carousel Slider
           Padding(
             padding: EdgeInsets.all(MySizes.md),
-            child: MyPromoSlider(banners: [MyImages.promoBanner1,MyImages.promoBanner2,MyImages.promoBanner3,MyImages.promoBanner4,MyImages.promoBanner5,MyImages.promoBanner6,MyImages.promoBanner7,MyImages.promoBanner8],),
+            child: Column(
+              children: [
+                /// -- Promotion Banner Slider
+                MyPromoSlider(
+                  banners: [
+                    MyImages.promoBanner1,
+                    MyImages.promoBanner2,
+                    MyImages.promoBanner3,
+                    MyImages.promoBanner4,
+                    MyImages.promoBanner5,
+                    MyImages.promoBanner6,
+                    MyImages.promoBanner7,
+                    MyImages.promoBanner8
+                  ],
+                ),
+                SizedBox(
+                  height: MySizes.spaceBtwSections,
+                ),
 
-
+                /// -- Vertical Product Card
+                MyProductCardVertical(),
+              ],
+            ),
           ),
         ],
       )),
     );
   }
 }
-

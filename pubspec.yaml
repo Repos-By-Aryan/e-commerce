@@ -51,10 +51,11 @@ flutter:
   assets:
     - assets/logos/
     - assets/icons/brands/
-    - assets/icons/categories/
-    - assets/images/on_boarding_images/
-    - assets/images/animations/
     - assets/images/banners/
+    - assets/images/products/
+    - assets/icons/categories/
+    - assets/images/animations/
+    - assets/images/on_boarding_images/
 
   #----------------- LOCAL FONTS ---------------------#
   fonts:
