@@ -6,8 +6,10 @@ import 'package:e_commerce/utils/constants/colors.dart';
 import 'package:e_commerce/utils/constants/image_strings.dart';
 import 'package:flutter/material.dart';
 
+
 import '../../../common/widgets/custom_shapes/containers/primary_header_container.dart';
 import '../../../common/widgets/custom_shapes/containers/search_container.dart';
+import '../../../common/widgets/layout/grid_layout.dart';
 import '../../../common/widgets/texts/section_heading.dart';
 import '../../../utils/constants/sizes.dart';
 
@@ -16,11 +18,11 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: SingleChildScrollView(
           child: Column(
         children: [
-          MyPrimaryHeaderContainer(
+          const MyPrimaryHeaderContainer(
             child: Column(
               children: [
                 /// Custom App Bar
@@ -63,11 +65,11 @@ class HomeScreen extends StatelessWidget {
 
           /// Carousel Slider
           Padding(
-            padding: EdgeInsets.all(MySizes.md),
+            padding: const EdgeInsets.all(MySizes.md),
             child: Column(
               children: [
                 /// -- Promotion Banner Slider
-                MyPromoSlider(
+                const MyPromoSlider(
                   banners: [
                     MyImages.promoBanner1,
                     MyImages.promoBanner2,
@@ -79,12 +81,12 @@ class HomeScreen extends StatelessWidget {
                     MyImages.promoBanner8
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: MySizes.spaceBtwSections,
                 ),
 
-                /// -- Vertical Product Card
-                MyProductCardVertical(),
+                /// -- Popular Products
+                MyGridLayout(itemCount: 4, itemBuilder: (_,index) => MyProductCardVertical(),),
               ],
             ),
           ),
@@ -93,3 +95,5 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
+
+
