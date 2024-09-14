@@ -75,6 +75,7 @@ class MyProductCardVertical extends StatelessWidget {
             ),
           ),
 
+
           /// --Details
           Padding(
             padding: const EdgeInsets.only(left: MySizes.sm),
@@ -107,35 +108,40 @@ class MyProductCardVertical extends StatelessWidget {
                   ],
                 ),
 
-                /// -- Price & Add Icon
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    /// --Price
-                    MyProductPriceText(
-                      price: '35.0',
-                    ),
+              ],
+            ),
+          ),
 
-                    /// --Add to cart button
-                    Container(
-                      decoration: const BoxDecoration(
-                        color: MyAppColors.dark,
-                        borderRadius: BorderRadius.only(
-                          topLeft: Radius.circular(MySizes.cardRadiusMd),
-                          bottomRight:
-                              Radius.circular(MySizes.productImageRadius),
-                        ),
-                      ),
-                      child: const SizedBox(
-                          width: MySizes.iconLg * 1.2,
-                          height: MySizes.iconLg * 1.2,
-                          child: Center(
-                              child: Icon(
+          const Spacer(),
+          /// -- Price & Add Icon
+          Padding(
+            padding: const EdgeInsets.only(left:MySizes.sm),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                /// --Price
+                MyProductPriceText(
+                  price: '35.0',
+                ),
+
+                /// --Add to cart button
+                Container(
+                  decoration: const BoxDecoration(
+                    color: MyAppColors.dark,
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(MySizes.cardRadiusMd),
+                      bottomRight:
+                      Radius.circular(MySizes.productImageRadius),
+                    ),
+                  ),
+                  child: const SizedBox(
+                      width: MySizes.iconLg * 1.2,
+                      height: MySizes.iconLg * 1.2,
+                      child: Center(
+                          child: Icon(
                             Iconsax.add,
                             color: MyAppColors.white,
                           ))),
-                    ),
-                  ],
                 ),
               ],
             ),

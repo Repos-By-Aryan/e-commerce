@@ -3,11 +3,12 @@ import 'package:e_commerce/features/shop/controllers/home_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../../../common/widgets/custom_shapes/containers/circlular_container.dart';
-import '../../../../common/widgets/images/my_rounded_image.dart';
-import '../../../../utils/constants/colors.dart';
-import '../../../../utils/constants/image_strings.dart';
-import '../../../../utils/constants/sizes.dart';
+import '../../../../../common/widgets/custom_shapes/containers/circlular_container.dart';
+import '../../../../../common/widgets/images/my_rounded_image.dart';
+import '../../../../../utils/constants/colors.dart';
+import '../../../../../utils/constants/sizes.dart';
+
+
 
 class MyPromoSlider extends StatelessWidget {
   const MyPromoSlider({
