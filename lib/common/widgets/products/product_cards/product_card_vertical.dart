@@ -11,6 +11,7 @@ import 'package:iconsax/iconsax.dart';
 import '../../../../utils/constants/colors.dart';
 import '../../../../utils/constants/image_strings.dart';
 import '../../custom_shapes/containers/rounded_container.dart';
+import '../../texts/my_brand_title_text_with_verified_icon.dart';
 import '../../texts/product_price_text.dart';
 import '../../texts/product_title_text.dart';
 
@@ -89,24 +90,7 @@ class MyProductCardVertical extends StatelessWidget {
                 const SizedBox(
                   height: MySizes.spaceBtwItems / 2,
                 ),
-                Row(
-                  children: [
-                    Text(
-                      'Nike',
-                      style: Theme.of(context).textTheme.labelMedium,
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
-                    ),
-                    const SizedBox(
-                      width: MySizes.xs,
-                    ),
-                    const Icon(
-                      Iconsax.verify5,
-                      color: MyAppColors.primary,
-                      size: MySizes.iconXs,
-                    )
-                  ],
-                ),
+                MyBrandTitleWithVerifiedIcon(title: 'Nike',),
 
               ],
             ),
@@ -151,3 +135,4 @@ class MyProductCardVertical extends StatelessWidget {
     );
   }
 }
+
