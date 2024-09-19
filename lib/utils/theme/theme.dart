@@ -1,3 +1,4 @@
+import 'package:e_commerce/utils/constants/colors.dart';
 import 'package:e_commerce/utils/theme/custom_themes/appbar_theme.dart';
 import 'package:e_commerce/utils/theme/custom_themes/checkbox_theme.dart';
 import 'package:e_commerce/utils/theme/custom_themes/chip_theme.dart';
@@ -17,7 +18,7 @@ class MyAppTheme{
     primaryColor: Colors.blue,
     textTheme: MyTextTheme.lightTextTheme,
     chipTheme: MyChipTheme.lightChipTheme,
-    scaffoldBackgroundColor: Colors.white,
+    scaffoldBackgroundColor: MyAppColors.white,
     appBarTheme: MyAppBarTheme.lightAppBarTheme,
     checkboxTheme: MyCheckBoxTheme.lightCheckboxTheme,
     elevatedButtonTheme:AppElevatedButtonTheme.lightElevatedButtonTheme,
@@ -33,7 +34,7 @@ class MyAppTheme{
     primaryColor: Colors.blue,
     textTheme: MyTextTheme.darkTextTheme,
     chipTheme: MyChipTheme.darkChipTheme,
-    scaffoldBackgroundColor: Colors.black,
+    scaffoldBackgroundColor: MyAppColors.black,
     appBarTheme: MyAppBarTheme.darkAppBarTheme,
     checkboxTheme: MyCheckBoxTheme.darkCheckboxTheme,
     elevatedButtonTheme:AppElevatedButtonTheme.darkElevatedButtonTheme,
